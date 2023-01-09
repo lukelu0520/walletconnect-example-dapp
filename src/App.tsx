@@ -166,7 +166,7 @@ class App extends React.Component<any, any> {
 
     // create new connector
     const connector = new WalletConnect({ bridge, qrcodeModal: QRCodeModal });
-
+    console.log(connector)
     await this.setState({ connector });
 
     // check if already connected
